@@ -8,7 +8,7 @@
           <h2>HANANIKKI</h2>
           <p>花日記では、広島県福山市を中心にドライフラワーのアレンジ作品・花材の販売を行なっています。店舗での販売・配達・メルカリ等のアプリでも販売をしております。ぜひ一度作品をチェックしてみてください！</p>
         </div>
-        <div class="image">
+        <div class="image" v-bind:style= "{ 'background-image':' url(' + src + ')' }">
           <div class="image_bg"></div>
           <div></div>
         </div>
@@ -18,8 +18,14 @@
 </template>
 
 <script>
+import src from '@/assets/hananikki/dryflower.jpg';
 export default {
-  name: 'Top'
+  name: 'Top',
+  data() {
+    return {
+      src: src,
+    };
+  }
 }
 
 $(function(){
@@ -86,7 +92,6 @@ p {
 .intro .contents .image {
   display: inline-block;
   height: 29vw;
-  background-image: url(./../assets/hananikki/dryflower.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   flex-basis: 56%;

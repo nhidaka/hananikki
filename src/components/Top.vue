@@ -1,5 +1,5 @@
 <template>
-  <div class="top">
+  <div class="top" v-bind:style= "{ 'background-image':' url(' + src + ')' }">
     <div class="header">
       <p><img src="../assets/hananikki/logo_black.png" alt=""></p>
       <div class="sns">
@@ -27,6 +27,8 @@ import News from "./News"
 import Map from "./Map"
 import Footer from "./Footer"
 
+import src from '@/assets/hananikki/back_2.jpg';
+
 export default {
   name: 'Top',
   components: {
@@ -35,6 +37,11 @@ export default {
     News,
     Map,
     Footer
+  },
+  data() {
+    return {
+      src: src,
+    };
   }
 }
 </script>
@@ -43,7 +50,6 @@ export default {
 <style scoped>
 .top {
   height: 100vh;
-  background-image: url(./../assets/hananikki/back_2.jpg);
   background-repeat:no-repeat;
   background-size: cover;
 }
