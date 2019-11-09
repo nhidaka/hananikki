@@ -86,7 +86,7 @@ p {
 .intro .contents .image {
   display: inline-block;
   height: 29vw;
-  background-image: url(../assets/hananikki/dryflower.jpg);
+  background-image: url(./../assets/hananikki/dryflower.jpg);
   background-repeat:no-repeat;
   background-size: cover;
   flex-basis: 56%;

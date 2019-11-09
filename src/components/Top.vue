@@ -43,7 +43,7 @@ export default {
 <style scoped>
 .top {
   height: 100vh;
-  background-image: url(../assets/hananikki/back_2.jpg);
+  background-image: url(./../assets/hananikki/back_2.jpg);
   background-repeat:no-repeat;
   background-size: cover;
 }
